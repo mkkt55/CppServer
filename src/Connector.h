@@ -9,11 +9,7 @@ public:
     void start();
     void serveLoops();
     void stop();
-    void setMaxCount(int mCount);
     ~Connector();
 private:
-    int maxCount = 100;
-    int serverStatus = 0;
     int serverSocket = -1;
-    sockaddr_in* addrPtr = nullptr;
 };
